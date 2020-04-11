@@ -523,7 +523,7 @@ namespace Xamarin.Forms
 							return ApplicationTheme.Unspecified;
 					};
 #else
-					return AppTheme.Unspecified;
+					return ApplicationTheme.Unspecified;
 #endif
 #else
                     return ApplicationTheme.Unspecified;

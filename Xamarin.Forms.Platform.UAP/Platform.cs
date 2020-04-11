@@ -442,7 +442,7 @@ namespace Xamarin.Forms.Platform.UWP
 					// Since the Light theme should have a Black on White status bar, we will set it explicitly. 
 					// This can be overriden by setting the status bar colors in App.xaml.cs OnLaunched.
 
-					if (statusBar.BackgroundColor == null && statusBar.ForegroundColor == null && Windows.UI.Xaml.Application.Current.RequestedTheme == ApplicationTheme.Light)
+					if (statusBar.BackgroundColor == null && statusBar.ForegroundColor == null && Windows.UI.Xaml.Application.Current.RequestedTheme == Windows.UI.Xaml.ApplicationTheme.Light)
 					{
 						statusBar.BackgroundColor = Colors.White;
 						statusBar.ForegroundColor = Colors.Black;
