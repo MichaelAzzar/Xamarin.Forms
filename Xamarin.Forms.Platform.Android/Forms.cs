@@ -931,19 +931,19 @@ namespace Xamarin.Forms
 			}
 
 			#region Replace with Essentials API
-			public AppTheme RequestedTheme
-			{
-				get
-				{
-					var nightMode = _context.Resources.Configuration.UiMode & UiMode.NightMask;
-					switch (nightMode)
-					{
-						case UiMode.NightYes:
-							return AppTheme.Dark;
-						case UiMode.NightNo:
-							return AppTheme.Light;
-						default:
-							return AppTheme.Unspecified;
+			public ApplicationTheme RequestedTheme
+            {
+                get
+                {
+                    var nightMode = _context.Resources.Configuration.UiMode & UiMode.NightMask;
+                    switch (nightMode)
+                    {
+                        case UiMode.NightYes:
+                            return ApplicationTheme.Dark;
+                        case UiMode.NightNo:
+                            return ApplicationTheme.Light;
+                        default:
+                            return ApplicationTheme.Unspecified;
 					};
 				}
 			}

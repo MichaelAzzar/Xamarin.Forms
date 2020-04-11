@@ -214,7 +214,7 @@ namespace Xamarin.Forms.DualScreen.UnitTests
 			return new SizeRequest(new Size(100, 20));
 		}
 
-		public AppTheme RequestedTheme => AppTheme.Unspecified;
+		public ApplicationTheme RequestedTheme => ApplicationTheme.Unspecified;
 	}
 
 	internal class MockDeserializer : Internals.IDeserializer

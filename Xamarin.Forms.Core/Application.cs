@@ -157,7 +157,7 @@ namespace Xamarin.Forms
 			}
 		}
 
-		public AppTheme RequestedTheme => Device.PlatformServices.RequestedTheme;
+		public ApplicationTheme RequestedTheme => Device.PlatformServices.RequestedTheme;
 
 		public event EventHandler<AppThemeChangedEventArgs> RequestedThemeChanged
 		{

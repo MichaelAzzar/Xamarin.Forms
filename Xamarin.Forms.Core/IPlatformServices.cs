@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Internals
 
 		Color GetNamedColor(string name);
 
-		AppTheme RequestedTheme { get; }
+		ApplicationTheme RequestedTheme { get; }
 
 		Task<Stream> GetStreamAsync(Uri uri, CancellationToken cancellationToken);
 

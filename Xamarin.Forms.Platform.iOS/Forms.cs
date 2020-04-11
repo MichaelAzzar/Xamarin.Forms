@@ -502,13 +502,13 @@ namespace Xamarin.Forms
 			}
 
 			#region Remove with Essentials API
-			public AppTheme RequestedTheme
-			{
-				get
-				{
+			public ApplicationTheme RequestedTheme
+            {
+                get
+                {
 #if __IOS__ || __TVOS__
 					if (!IsiOS13OrNewer)
-						return AppTheme.Unspecified;
+						return ApplicationTheme.Unspecified;
 #if __XCODE11__
 					var uiStyle = GetCurrentUIViewController()?.TraitCollection?.UserInterfaceStyle ??
 						UITraitCollection.CurrentTraitCollection.UserInterfaceStyle;
@@ -516,17 +516,17 @@ namespace Xamarin.Forms
 					switch (uiStyle)
 					{
 						case UIUserInterfaceStyle.Light:
-							return AppTheme.Light;
+							return ApplicationTheme.Light;
 						case UIUserInterfaceStyle.Dark:
-							return AppTheme.Dark;
+							return ApplicationTheme.Dark;
 						default:
-							return AppTheme.Unspecified;
+							return ApplicationTheme.Unspecified;
 					};
 #else
 					return AppTheme.Unspecified;
 #endif
 #else
-					return AppTheme.Unspecified;
+                    return ApplicationTheme.Unspecified;
 #endif
 				}
 			}
